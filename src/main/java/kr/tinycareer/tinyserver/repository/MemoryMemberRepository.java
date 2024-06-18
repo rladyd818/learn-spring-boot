@@ -5,7 +5,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-@Repository
 public class MemoryMemberRepository implements MemberRepository {
 
     // store와 sequence 둘 다 동시성 문제 발생할 수 있음. 원래는 동시성 문제 해결을 위한 별도 선언이 필요함.
