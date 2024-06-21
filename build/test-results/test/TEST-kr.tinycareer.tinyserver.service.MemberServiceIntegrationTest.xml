@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-21T08:55:47" hostname="kd" time="0.584">
+<testsuite name="kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-21T09:40:25" hostname="kd" time="0.417">
   <properties/>
-  <testcase name="join()" classname="kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest" time="0.57"/>
-  <testcase name="중복_회원_예외()" classname="kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest" time="0.012"/>
-  <system-out><![CDATA[17:55:45.501 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest]: MemberServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-17:55:45.556 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration kr.tinycareer.tinyserver.TinyserverApplication for test class kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest
+  <testcase name="join()" classname="kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest" time="0.417"/>
+  <system-out><![CDATA[18:40:24.021 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest]: MemberServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:40:24.073 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration kr.tinycareer.tinyserver.TinyserverApplication for test class kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
 ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
@@ -14,27 +13,24 @@
 
  :: Spring Boot ::                (v3.3.0)
 
-2024-06-21T17:55:45.749+09:00  INFO 28159 --- [tinyserver] [    Test worker] k.t.t.s.MemberServiceIntegrationTest     : Starting MemberServiceIntegrationTest using Java 21.0.3 with PID 28159 (started by kd in /home/kd/project/learn-spring-boot)
-2024-06-21T17:55:45.750+09:00  INFO 28159 --- [tinyserver] [    Test worker] k.t.t.s.MemberServiceIntegrationTest     : No active profile set, falling back to 1 default profile: "default"
-2024-06-21T17:55:46.073+09:00  INFO 28159 --- [tinyserver] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-06-21T17:55:46.085+09:00  INFO 28159 --- [tinyserver] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
-2024-06-21T17:55:46.303+09:00  INFO 28159 --- [tinyserver] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-06-21T17:55:46.330+09:00  INFO 28159 --- [tinyserver] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
-2024-06-21T17:55:46.347+09:00  INFO 28159 --- [tinyserver] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-06-21T17:55:46.503+09:00  INFO 28159 --- [tinyserver] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-06-21T17:55:46.515+09:00  INFO 28159 --- [tinyserver] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-06-21T17:55:46.554+09:00  INFO 28159 --- [tinyserver] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/test user=SA
-2024-06-21T17:55:46.555+09:00  INFO 28159 --- [tinyserver] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-06-21T17:55:46.937+09:00  INFO 28159 --- [tinyserver] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-06-21T17:55:46.939+09:00  INFO 28159 --- [tinyserver] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-06-21T17:55:47.044+09:00  WARN 28159 --- [tinyserver] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-06-21T17:55:47.056+09:00  INFO 28159 --- [tinyserver] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
-2024-06-21T17:55:47.253+09:00  INFO 28159 --- [tinyserver] [    Test worker] k.t.t.s.MemberServiceIntegrationTest     : Started MemberServiceIntegrationTest in 1.622 seconds (process running for 2.269)
+2024-06-21T18:40:24.264+09:00  INFO 31709 --- [tinyserver] [    Test worker] k.t.t.s.MemberServiceIntegrationTest     : Starting MemberServiceIntegrationTest using Java 21.0.3 with PID 31709 (started by kd in /home/kd/project/learn-spring-boot)
+2024-06-21T18:40:24.265+09:00  INFO 31709 --- [tinyserver] [    Test worker] k.t.t.s.MemberServiceIntegrationTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T18:40:24.582+09:00  INFO 31709 --- [tinyserver] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-06-21T18:40:24.614+09:00  INFO 31709 --- [tinyserver] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interface.
+2024-06-21T18:40:24.848+09:00  INFO 31709 --- [tinyserver] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-06-21T18:40:24.881+09:00  INFO 31709 --- [tinyserver] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-06-21T18:40:24.898+09:00  INFO 31709 --- [tinyserver] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-06-21T18:40:25.048+09:00  INFO 31709 --- [tinyserver] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-06-21T18:40:25.061+09:00  INFO 31709 --- [tinyserver] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-21T18:40:25.102+09:00  INFO 31709 --- [tinyserver] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/test user=SA
+2024-06-21T18:40:25.103+09:00  INFO 31709 --- [tinyserver] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-06-21T18:40:25.495+09:00  INFO 31709 --- [tinyserver] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-06-21T18:40:25.496+09:00  INFO 31709 --- [tinyserver] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-06-21T18:40:25.743+09:00  WARN 31709 --- [tinyserver] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-06-21T18:40:25.756+09:00  INFO 31709 --- [tinyserver] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-06-21T18:40:25.974+09:00  INFO 31709 --- [tinyserver] [    Test worker] k.t.t.s.MemberServiceIntegrationTest     : Started MemberServiceIntegrationTest in 1.829 seconds (process running for 2.393)
 Hibernate: select m1_0.id,m1_0.name from member m1_0 where m1_0.name=?
 Hibernate: insert into member (name,id) values (?,default)
-Hibernate: select m1_0.id,m1_0.name from member m1_0 where m1_0.name=?
-Hibernate: insert into member (name,id) values (?,default)
-Hibernate: select m1_0.id,m1_0.name from member m1_0 where m1_0.name=?
 ]]></system-out>
   <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/kd/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.16/4a451ee6484abac3a498df0f3b33ed00a6fced4d/byte-buddy-agent-1.14.16.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
