@@ -2,6 +2,7 @@ package kr.tinycareer.tinyserver;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Id;
+import kr.tinycareer.tinyserver.aop.TimeTraceAop;
 import kr.tinycareer.tinyserver.repository.*;
 import kr.tinycareer.tinyserver.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,6 +39,11 @@ public class SpringConfig {
     public MemberService memberService() {
         return new MemberService(memberRepository);
     }
+
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
 
 //    @Bean
 //    public MemberRepository memberRepository() {
