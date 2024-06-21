@@ -60,7 +60,7 @@ public class JdbcMemberRepository implements MemberRepository {
             pstmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             pstmt.setLong(1, id);
 
-            pstmt.executeQuery();
+            rs = pstmt.executeQuery();
             if (rs.next()) {
                 Member member = new Member();
                 member.setId(rs.getLong("id"));
@@ -90,7 +90,7 @@ public class JdbcMemberRepository implements MemberRepository {
             pstmt = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
             pstmt.setString(1, name);
 
-            pstmt.executeQuery();
+            rs = pstmt.executeQuery();
             if (rs.next()) {
                 Member member = new Member();
                 member.setId(rs.getLong("id"));

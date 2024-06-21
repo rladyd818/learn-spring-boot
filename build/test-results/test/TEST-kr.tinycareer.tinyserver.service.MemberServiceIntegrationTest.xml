@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2024-06-21T03:47:04" hostname="kd" time="0.515">
+  <properties/>
+  <testcase name="join()" classname="kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest" time="0.505"/>
+  <testcase name="중복_회원_예외()" classname="kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest" time="0.008"/>
+  <system-out><![CDATA[12:47:03.676 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest]: MemberServiceIntegrationTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:47:03.723 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration kr.tinycareer.tinyserver.TinyserverApplication for test class kr.tinycareer.tinyserver.service.MemberServiceIntegrationTest
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.0)
+
+2024-06-21T12:47:03.901+09:00  INFO 13675 --- [tinyserver] [    Test worker] k.t.t.s.MemberServiceIntegrationTest     : Starting MemberServiceIntegrationTest using Java 21.0.3 with PID 13675 (started by kd in /home/kd/project/learn-spring-boot)
+2024-06-21T12:47:03.902+09:00  INFO 13675 --- [tinyserver] [    Test worker] k.t.t.s.MemberServiceIntegrationTest     : No active profile set, falling back to 1 default profile: "default"
+2024-06-21T12:47:04.408+09:00  INFO 13675 --- [tinyserver] [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2024-06-21T12:47:04.581+09:00  INFO 13675 --- [tinyserver] [    Test worker] k.t.t.s.MemberServiceIntegrationTest     : Started MemberServiceIntegrationTest in 0.79 seconds (process running for 1.323)
+2024-06-21T12:47:04.597+09:00  INFO 13675 --- [tinyserver] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-06-21T12:47:04.637+09:00  INFO 13675 --- [tinyserver] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/test user=SA
+2024-06-21T12:47:04.638+09:00  INFO 13675 --- [tinyserver] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/kd/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.16/4a451ee6484abac3a498df0f3b33ed00a6fced4d/byte-buddy-agent-1.14.16.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
